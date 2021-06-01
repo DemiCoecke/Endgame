@@ -1,0 +1,10 @@
+.hero{
+    &__image{
+        background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("../images/banner-bg.png");
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+
+    }
+}

@@ -1,0 +1,64 @@
+.block-3__cards__item{
+    margin-top: 40px;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.card{
+    width: 170px;
+    height: 170px;
+
+    box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.10);
+    border: 1px solid #E5E5E5; 
+    border-radius: 5px;
+
+    &__top{
+        height: 39px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-left: 10px;
+        // background-color: blue;
+    }
+
+    &__number{
+        font-family: Alfa Slab One;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 24px;
+        line-height: auto;
+        
+        color: rgba(0, 0, 0, 0.10)
+    }
+
+    &__middle{
+        height: 92px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        // background-color: pink;
+    }
+
+    &__icon{
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__icon{
+        width: auto;
+        height: auto;
+    }
+
+    &__bottom{
+        height: 39px;
+        // background-color: blue;
+    }
+}
+
+.block-3__cards__content{
+    margin-top: 20px;
+}
+

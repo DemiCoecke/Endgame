@@ -1,0 +1,26 @@
+.block__btn{
+    width: 170px;
+    border: none;
+    border-radius: 3px;
+    box-sizing: border-box;
+    height: 48px;
+    width: 170px;
+
+    &__1{
+        @extend .block__btn;
+        border: 2px solid #2B2B2B;
+        background-color: #FFFFFF;
+        
+    }
+
+    &__2{
+        @extend .block__btn;
+        background-color: #BE6361;
+    }
+
+    &__3{
+        @extend .block__btn;
+        border: 1px solid #BE6361;
+        background-color: transparent;
+    }
+}

@@ -1,0 +1,9 @@
+.block-1__input{
+    background: map-get($colors, 'text-white');
+    border: 1px solid #DADADA;
+    box-sizing: border-box;
+    border-radius: 3px;
+    width: 100%;
+    height: 48px;
+    padding-left: 15px;
+}

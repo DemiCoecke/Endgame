@@ -1,0 +1,15 @@
+.block-4__list__item{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding-top: 5px;
+}
+
+.list__style{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-self: flex-start;
+    padding: 5px 15px 0px 3px;
+}

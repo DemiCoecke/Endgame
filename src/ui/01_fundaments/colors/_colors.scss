@@ -1,0 +1,29 @@
+//COLORS
+$colors: (
+  'block-1': #FF8482,
+  'block-2': #FFF2DD,
+  'block-3': #FFFFFF,
+  'block-4': #FFF2DD,
+  'block-5': #3D201F,
+  'block-6': #BE6361,
+
+  'text-black': #333333,
+  'text-pink': #BE6361,
+  'text-white': #FFFFFF,
+  'text-soft-black': rgba(51,51,51,0.5),
+  'text-soft-white': rgba(255,255,255,0.5),
+
+  'dark-pink': #A85756
+);
+
+//LOOP THROUGH COLORS
+@each $key, $value in $colors {
+    //BACKGROUND COLOR
+  .bg--#{$key} { 
+    background-color: #{$value}; 
+  }
+  //FONT COLOR
+  .fc--#{$key} {
+    color: #{$value};
+  }
+}

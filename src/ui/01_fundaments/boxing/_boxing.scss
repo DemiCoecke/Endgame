@@ -1,0 +1,23 @@
+$gap: 4px;
+$gaps: 20;
+
+@for $i from 0 through $gaps {
+    
+    //MARGINS
+  .mt--#{$i} { margin-top: #{$i * $gap}; }
+  .mb--#{$i} { margin-bottom: #{$i * $gap}; }
+  .ml--#{$i} { margin-left: #{$i * $gap}; }
+  .mr--#{$i} { margin-right: #{$i * $gap}; }
+  .mx--#{$i} { @extend .ml--#{$i}; @extend .mr--#{$i}; }
+  .my--#{$i} { @extend .mt--#{$i}; @extend .mb--#{$i}; }
+  .m--#{$i} { @extend .mx--#{$i}; @extend .my--#{$i}; }
+  
+    //PADDINGS
+  .pt--#{$i} { padding-top: #{$i * $gap}; }
+  .pb--#{$i} { padding-bottom: #{$i * $gap}; }
+  .pl--#{$i} { padding-left: #{$i * $gap}; }
+  .pr--#{$i} { padding-right: #{$i * $gap}; }
+  .px--#{$i} { @extend .pl--#{$i}; @extend .pr--#{$i}; }
+  .py--#{$i} { @extend .pt--#{$i}; @extend .pb--#{$i}; }
+  .p--#{$i} { @extend .px--#{$i}; @extend .py--#{$i}; }
+}

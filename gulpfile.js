@@ -1,4 +1,4 @@
-// Initialize modules
+//Basics
 const { src, dest, series, parallel, watch} = require('gulp'),
     cssnano = require('gulp-cssnano'),
     sass = require('gulp-sass'),
@@ -8,23 +8,22 @@ const { src, dest, series, parallel, watch} = require('gulp'),
     del = require('del'),
     browserSync = require("browser-sync").create();
 
-const origin = 'src',
-    destination = 'dist';
+const origin = 'src', destination = 'dist';
 
-// Del task: removes dist folder before new one gets compiled
+//Delets old files - clean up!
 async function clean(cb) {
     await del(destination);
     cb();
 }
 
-// HTML task: compiles HTML to dist folder
+//Copy HTML
 function html(cb) {
     src(`${origin}/**/*.html`)
         .pipe(dest(destination));
     cb();
 }
 
-// Sass task: compiles the style.scss file into style.css
+//SASS
 function css(cb){
     src(`${origin}/ui/*.scss`)
         .pipe(sass()) // compile SCSS to CSS
@@ -33,7 +32,7 @@ function css(cb){
     cb();
 };
 
-// JS task: concatenates and uglifies JS files to script.js
+//Concatenate & uglify JS
 function js(cb) {
     src(`${origin}/**/*.js`)
         .pipe(concat('main.js'))
@@ -42,7 +41,7 @@ function js(cb) {
     cb();
 };
 
-// Imagemin task: optimize images
+//Optimize images
 async function imgOptimize(cb) {
     src(`${origin}/images/*`)
         .pipe(imagemin())
@@ -50,7 +49,7 @@ async function imgOptimize(cb) {
     cb();
 }
 
-// Watch task: watch SCSS and JS files for changes
+//Watch task
 function watcher(cb) {
     watch(`${origin}/**/*.scss`).on('change', series(css, browserSync.reload));
     watch(`${origin}/**/*.js`).on('change', series(js, browserSync.reload));
@@ -58,6 +57,7 @@ function watcher(cb) {
     cb(); 
 };
 
+//Browsersync
 function server(cb){
     browserSync.init({
         notify: false,
@@ -69,5 +69,5 @@ function server(cb){
     cb();
 }
 
-// Default task 'gulp' in terminal
+//Default
 exports.default = series(clean, parallel(html, css, js), imgOptimize, server, watcher);

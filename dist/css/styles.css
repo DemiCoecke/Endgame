@@ -586,6 +586,12 @@ table {
 .fc--block-6 {
   color: #BE6361; }
 
+.bg--copyright {
+  background-color: #A85756; }
+
+.fc--copyright {
+  color: #A85756; }
+
 .bg--text-black {
   background-color: #333333; }
 
@@ -768,6 +774,12 @@ img {
   align-self: flex-start;
   padding: 5px 15px 0px 3px; }
 
+.block-6__list {
+  display: flex;
+  flex-direction: column;
+  padding-top: 5px;
+  color: rgba(255, 255, 255, 0.5); }
+
 .block-3 {
   justify-content: center;
   text-align: center; }
@@ -789,3 +801,20 @@ img {
   display: flex;
   justify-content: space-between;
   align-items: center; }
+
+.block-6__socials {
+  display: flex;
+  flex-direction: row; }
+  .block-6__socials__icon {
+    display: flex;
+    margin-right: 20px;
+    justify-content: center;
+    align-items: center; }
+
+.block-6__copyright {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #A85756;
+  height: 96px;
+  width: auto; }

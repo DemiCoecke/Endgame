@@ -13,3 +13,10 @@
     align-self: flex-start;
     padding: 5px 15px 0px 3px;
 }
+
+.block-6__list{
+    display: flex;
+    flex-direction: column;
+    padding-top: 5px;
+    color: map-get($colors, "text-soft-white")
+}

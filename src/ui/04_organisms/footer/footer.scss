@@ -1,0 +1,26 @@
+.block-6{
+
+    &__socials{
+        display: flex;
+        flex-direction: row;
+
+        &__icon{
+            display: flex;
+            margin-right: 20px;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+
+    &__copyright{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        background-color: #A85756;
+        height: 96px;
+        width: auto;
+
+    }
+
+}

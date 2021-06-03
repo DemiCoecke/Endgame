@@ -21,3 +21,17 @@ $gaps: 20;
   .py--#{$i} { @extend .pt--#{$i}; @extend .pb--#{$i}; }
   .p--#{$i} { @extend .px--#{$i}; @extend .py--#{$i}; }
 }
+
+
+.wrapper{
+  max-width: 100%;
+}
+
+//DESKTOP
+
+@media only screen and (min-width: 768px) {
+  .wrapper{
+    max-width: 80%;
+    margin: 0 auto;
+  }
+}

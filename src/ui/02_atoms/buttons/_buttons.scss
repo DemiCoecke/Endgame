@@ -10,7 +10,6 @@
         @extend .block__btn;
         border: 2px solid #2B2B2B;
         background-color: #FFFFFF;
-        
     }
 
     &__2{
@@ -24,3 +23,16 @@
         background-color: transparent;
     }
 }
+
+.nav__btn{
+    width: 170px;
+    border: none;
+    border-radius: 3px;
+    box-sizing: border-box;
+    height: 48px;
+    width: 170px;
+
+    border: 1px solid white;
+    background-color: transparent;
+}
+

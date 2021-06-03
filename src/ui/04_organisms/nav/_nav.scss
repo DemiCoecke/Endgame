@@ -2,4 +2,48 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    &__middle, &__right{
+        display:none;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .nav{
+        display:flex;
+        
+        // flex-direction: row;
+            
+        // justify-content: space-between;
+        // align-items: center;
+        
+
+        &__middle{
+            display: flex;
+            
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        &__links{
+            display: flex;
+            flex-direction: row;
+            
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        &__item{
+            display: flex;
+            padding-right: 40px;
+        }
+
+        &__right{
+            display: flex;
+        }
+
+        &__menu{
+            display:none;
+        }
+    }
 }

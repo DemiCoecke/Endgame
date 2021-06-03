@@ -8,57 +8,70 @@
     <title>Home</title>
 </head>
 <body>
-    <div class="wrapper">
-        <!-- Block 1 -->
-        <header class="block-1 bg--block-1 p--3">
+    <!-- Block 1 -->
+    <header class="block-1  bg--block-1 p--3">
+        <div class="wrapper">
             <nav class="nav">
                 <div class="nav__logo">
                     <h3 class="fc--text-white">LOGO</h3>
                 </div>
+                <div class="nav__middle">
+                    <ul class="nav__links fc--text-white bold">
+                        <li class="nav__item"><a href="#"></a>About</li>
+                        <li class="nav__item"><a href="#"></a>Portfolio</li>
+                        <li class="nav__item"><a href="#"></a>Blog</li>
+                        <li class="nav__item"><a href="#"></a>Contact</li>
+                    </ul>
+                </div>
+                <div class="nav__right">
+                    <button class="nav__btn fc--text-white bold">Sign up</button>
+                </div>
                 <div class="nav__menu">
                     <img src="images/menu.png" alt="">
                 </div>
-                <!-- <ul class="nav__links">
-                    <li class="nav__item"><a href="#"></a>About</li>
-                    <li class="nav__item"><a href="#"></a>Portfolio</li>
-                    <li class="nav__item"><a href="#"></a>Blog</li>
-                    <li class="nav__item"><a href="#"></a>Contact</li>
-                </ul>
-                <button class="nav__btn">Sign up</button> -->
             </nav>
             <div class="block-1__content mt--2">
-                <h5 class="fc--text-white">Delectus instructior</h5>
-                <h2 class="fc--text-white pt--3 hyphenate">Vide legimus consectetuer</h2>
-                <div class="block-1__form">
-                    <input type="text" class="block-1__input mt--5" placeholder="Email">
-                    <button class="block__btn__1 mt--3">Submit</button>
+                <div class="block-1__text">
+                    <h5 class="fc--text-white">Delectus instructior</h5>
+                    <h2 class="fc--text-white pt--3">Vide legimus consectetuer</h2>
+                    <div class="block-1__form">
+                        <input type="text" class="block-1__input mt--5" placeholder="Email">
+                        <button class="block__btn__1 mt--3 bold">Submit</button>
+                    </div>
                 </div>
-                <div class="block-1__img mt--2">
+                <div class="block__img mt--2">
                     <img src="images/marginalia-productive-work.png" alt="">
                 </div>
             </div>
-        </header>
-
-        <!-- Block 2 -->
-        <section class="block-2 bg--block-2 p--3">
-            <div class="block-2__img">
-                <img src="images/marginalia-unsubscribed.png" alt="">
+        </div>
+    </header>
+    
+    <!-- Block 2 -->
+    <section class="block-2 bg--block-2 p--3">
+        <div class="wrapper">
+            <div class="block-2__items">
+                <div class="block__img">
+                    <img src="images/marginalia-unsubscribed.png" alt="">
+                </div>
+                <div class="block-2__content mt--3">
+                    <h5 class="fc--text-pink">Dico nullam</h5>
+                    <h3 class="fc--text-black mt--3 justify-text">Vim graeco<br>principes</h3>
+                    <p class="mt--7 justify-text">Quo ex ocurreret quaerendum. Mel cu ancillae similique. Mei no ubique persecuti, at sit iusto aliquam interpretaris.</p>
+                    <button class="block__btn__2 px--5 py--1 mt--3 mb--5 fc--text-white bold">Explore</button>
+                </div>
             </div>
-            <div class="block-2__content mt--3">
-                <h5 class="fc--text-pink">Dico nullam</h5>
-                <h3 class="fc--text-black mt--3">Vim graeco principes</h3>
-                <p class="mt--7 justify-text">Quo ex ocurreret quaerendum. Mel cu ancillae similique. Mei no ubique persecuti, at sit iusto aliquam interpretaris.</p>
-                <button class="block__btn__2 px--5 py--1 mt--3 mb--5 fc--text-white">Explore</button>
-            </div>
-        </section>
+        </div>
+    </section>
 
-        <!-- Block 3 -->
-        <section class="block-3 bg--block-3 p--3">
-            <div class="block-3__content mt--7">
-                <h5 class="fc--text-pink">Nominavi suavitate</h5>
-                <h3 class="fc--text-black pt--5">Offendit persecuti</h3>
-                <p class="pt--5">Eu pro ludus dignissim. Eos debet 
-                    <br>molestiae constituto ne, quo consul interesset ei, cotidieque <br> theophrastus ea his.</p>
+    <!-- Block 3 -->
+    <section class="block-3 bg--block-3 p--3 m--3">
+        <div class="wrapper">
+            <div class="block-3__items">
+                <div class="block-3__content mt--7">
+                    <h5 class="fc--text-pink">Nominavi suavitate</h5>
+                    <h3 class="fc--text-black pt--5">Offendit persecuti</h3>
+                    <p class="pt--5">Eu pro ludus dignissim. Eos debet molestiae constituto ne, quo consul interesset ei, cotidieque theophrastus ea his.</p>
+                </div>
             </div>
             <div class="block-3__cards">
                 <!-- card 1 -->
@@ -74,7 +87,7 @@
                     </div>
                     <div class="block-3__cards__content">
                         <h4>Possim</h4>
-                        <p class="fc--text-soft-black">An animal assentior nam, sed qualisque deterruisset ea qui melius erroribus</p>
+                        <p class="fc--text-soft-black">An animal assentior nam, sed qualisque<br>deterruisset ea qui melius erroribus</p>
                         </div> 
                 </div>
                 <!-- card 2 -->
@@ -109,80 +122,88 @@
                         <p class="fc--text-soft-black">Nam natum volutpat eu natum elitr vel te<br>id qui purto dicit</p>
                         </div> 
                 </div>
-            <button class="block__btn__2 px--5 py--1 my--16 fc--text-white">Learn more</button>
-        </section>
-
-        <!-- Block 4 -->
-        <section class="block-4 bg--block-4 p--3">
-            <div class="block-4__content mt--10">
-                <h5 class="fc--text-pink">Mel solum</h5>
-                <h3 class="fc--text-black mt--5">Mazim iudico</h3>
-                <ul class="block-4__list bold mt--5">
-                    <li class="block-4__list__item">
-                        <div class="list__style">
-                            <img src="images/heart.png" alt="">
-                        </div>
-                        <p>Bonorum minimum et sit tritani te, qui feugait electram</p>
-                    </li>
-                    <li class="block-4__list__item">
-                        <div class="list__style">
-                            <img src="images/star.png" alt="">
-                        </div>
-                        <div class="list__content">
-                            <p>Cum ei assum tation homero mel corpora consectetuer</p>
-                        </div>
-                    </li>
-                    <li class="block-4__list__item">
-                        <div class="list__style">
-                            <img src="images/rocket.png" alt="">
-                        </div>
-                        <div class="list__content">
-                            <p>At per assum dicit verterem veri eripuit honestatis</p>
-                        </div>
-                    </li>
-                    <li class="block-4__list__item">
-                        <div class="list__style">
-                            <img src="images/broadcast.png" alt="">
-                        </div>
-                        <div class="list__content">
-                            <p>Lorem deterruisset ea vis expetenda has ex</p>
-                        </div>
-                    </li>
-                    <li class="block-4__list__item">
-                        <div class="list__style">
-                            <img src="images/user.png" alt="">
-                        </div>
-                        <div class="list__content">
-                            <p>Usu eu hinc lorem inciderint minim movet quodsi</p>
-                        </div>
-                    </li>
-                </ul>
-                <button class="block__btn__3 px--5 py--1 my--10 bold fc--text-pink">Get started</button>
             </div>
-            <div class="block-4__img">
+            <button class="block__btn__2 px--5 py--1 my--8 fc--text-white bold">Learn more</button>
+    </section>
+
+    <!-- Block 4 -->
+    <section class="block-4 bg--block-4 p--3">
+        <div class="wrapper">
+            <div class="block-4__items">
+                <div class="block-4__content mt--10 justify-text">
+                    <div class="block-4__titles">
+                        <h5 class="fc--text-pink">Mel solum</h5>
+                        <h3 class="fc--text-black mt--5 justify-text">Mazim iudico</h3>
+                    </div>
+                    <ul class="block-4__list bold mt--5">
+                        <li class="block-4__list__item">
+                            <div class="list__style">
+                                <img src="images/heart.png" alt="">
+                            </div>
+                            <p>Bonorum minimum et sit tritani te, qui feugait electram</p>
+                        </li>
+                        <li class="block-4__list__item">
+                            <div class="list__style">
+                                <img src="images/star.png" alt="">
+                            </div>
+                            <div class="list__content">
+                                <p>Cum ei assum tation homero mel corpora consectetuer</p>
+                            </div>
+                        </li>
+                        <li class="block-4__list__item">
+                            <div class="list__style">
+                                <img src="images/rocket.png" alt="">
+                            </div>
+                            <div class="list__content">
+                                <p>At per assum dicit verterem veri eripuit honestatis</p>
+                            </div>
+                        </li>
+                        <li class="block-4__list__item">
+                            <div class="list__style">
+                                <img src="images/broadcast.png" alt="">
+                            </div>
+                            <div class="list__content">
+                                <p>Lorem deterruisset ea vis expetenda has ex</p>
+                            </div>
+                        </li>
+                        <li class="block-4__list__item">
+                            <div class="list__style">
+                                <img src="images/user.png" alt="">
+                            </div>
+                            <div class="list__content">
+                                <p>Usu eu hinc lorem inciderint minim movet quodsi</p>
+                            </div>
+                        </li>
+                    </ul>
+                    <button class="block__btn__3 px--5 py--1 my--10 bold fc--text-pink bold">Get started</button>
+                </div>
+            <div class="block__img">
                 <img src="images/marginalia-coming-soon.png" alt="">
             </div>
-        </section>
+        </div>
+        </div>
+    </section>
 
-        <!-- Block 5 -->
-        <div class="block-5 bg--block-5">
-            <div class="hero__image">
-                <div class="hero__content">
-                    <h5 class="fc--text-white">Eos lobortis inimicus</h5>
-                    <h3 class="fc--text-white pt--3">Pro ad ubique erroribus in modo mutat sed</h3>
-                    <button class="block__btn__1 mt--3">Try now</button>
-                </div>
+    <!-- Block 5 -->
+    <div class="block-5 bg--block-5">
+        <div class="hero__image">
+            <div class="hero__content">
+                <h5 class="fc--text-white">Eos lobortis inimicus</h5>
+                <h3 class="fc--text-white pt--3">Pro ad ubique erroribus in modo mutat sed</h3>
+                <button class="block__btn__1 mt--3 bold">Try now</button>
             </div>
         </div>
+    </div>
 
-        <!-- Footer -->
-        <footer class="block-6 bg--block-6">
-            <div class="block-6__content p--3">
-                <div class="block-6__top mt--10 mb--15">
-                    <h3 class="fc--text-white">LOGO</h3>
-                    <p class="fc--text-white mt--3">Sit alii tantas viderer no. An mel nostrum appareat. Ad consul facilis est. Vix habeo scaevola percipitur ne, qui noster abhorreant ne.</p>
+    <!-- Block 6 -->
+    <footer class="block-6 bg--block-6">
+        <div class="wrapper p--3">
+            <div class="block-6__content">
+                <div class="block-6__top">
+                    <h3 class="fc--text-white mt--10">LOGO</h3>
+                    <p class="fc--text-white mt--3 justify-text">Sit alii tantas viderer no. An mel nostrum appareat. Ad consul facilis est. Vix habeo scaevola percipitur ne, qui noster abhorreant ne.</p>
                     <!-- socials -->
-                    <div class="block-6__socials mt--7">
+                    <div class="block-6__socials my--7">
                         <div class="block-6__socials__icon">
                             <img src="images/fb-icon.png" alt="">
                         </div>
@@ -195,44 +216,48 @@
                     </div>
                 </div>
                 <!-- lists -->
-                <div class="block-6__listing">
-                    <div class="block-6__list">
-                        <ul class="block-6__list">
-                            <p class="bold fc--text-white mt--7 mb--5">Habeo</p>
-                            <li class="block-6__list__item">Scaevola</li>
-                            <li class="block-6__list__item">Aliquam</li>
-                            <li class="block-6__list__item">Noluisse</li>
-                            <li class="block-6__list__item">Epicuri</li>
-                            <li class="block-6__list__item">Detracto</li>
-                        </ul>
-                    </div>
-                    <div class="block-6__list-2">
-                        <ul class="block-6__list">
-                            <p class="bold fc--text-white mt--7 mb--5">Indoctum</p>
-                            <li class="block-6__list__item">Fierent</li>
-                            <li class="block-6__list__item">Pericula</li>
-                            <li class="block-6__list__item">Veniam</li>
-                            <li class="block-6__list__item">Epicuri</li>
-                            <li class="block-6__list__item">Mutat</li>
-                        </ul>
-                    </div>
-                    <div class="block-6__list">
-                        <ul class="block-6__list">
-                            <p class="bold fc--text-white mt--7 mb--5">Quaestio</p>
-                            <li class="block-6__list__item">Erroribus</li>
-                            <li class="block-6__list__item">Modus</li>
-                            <li class="block-6__list__item">Volumus</li>
-                            <li class="block-6__list__item">Abhorreant</li>
-                            <li class="block-6__list__item">Mentitum</li>
-                        </ul>
+                <div class="block-6__listing my--10">
+                    <div class="block-6__lists justify-text">
+                        <div class="block-6__list">
+                            <ul>
+                                <p class="bold fc--text-white mt--7 mb--5">Habeo</p>
+                                <li class="block-6__list__item">Scaevola</li>
+                                <li class="block-6__list__item">Aliquam</li>
+                                <li class="block-6__list__item">Noluisse</li>
+                                <li class="block-6__list__item">Epicuri</li>
+                                <li class="block-6__list__item">Detracto</li>
+                            </ul>
+                        </div>
+                        <div class="block-6__list">
+                            <ul>
+                                <p class="bold fc--text-white mt--7 mb--5">Indoctum</p>
+                                <li class="block-6__list__item">Fierent</li>
+                                <li class="block-6__list__item">Pericula</li>
+                                <li class="block-6__list__item">Veniam</li>
+                                <li class="block-6__list__item">Epicuri</li>
+                                <li class="block-6__list__item">Mutat</li>
+                            </ul>
+                        </div>
+                        <div class="block-6__list">
+                            <ul>
+                                <p class="bold fc--text-white mt--7 mb--5">Quaestio</p>
+                                <li class="block-6__list__item">Erroribus</li>
+                                <li class="block-6__list__item">Modus</li>
+                                <li class="block-6__list__item">Volumus</li>
+                                <li class="block-6__list__item">Abhorreant</li>
+                                <li class="block-6__list__item">Mentitum</li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="block-6__copyright bg--copyright">
-                <p class="fc--text-soft-white">&copy LOGO, 2019. All rights reserved.<br>Created by Laaqiq.</p>
+        </div>
+        <!-- copyright -->
+        <div class="block-6__copyright bg--copyright">
+            <div class="block-6__copyright__text">
+                <p class="center-text fc--text-soft-white">&copy LOGO, 2019. All rights reserved. Created by Demi.</p>
             </div>
-        </footer>
-
-    </div>
+        </div>
+    </footer>
 </body>
 </html>

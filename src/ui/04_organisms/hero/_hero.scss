@@ -6,13 +6,18 @@
         justify-content: center;
         align-items: center;
         width: 100%;
+    }
 
+    h3{
+        max-width: 550px;
     }
 }
 
 
 @media only screen and (min-width: 768px) {
     .hero__content{
-        width: 35%;
+        h3 {
+            max-width: 730px;
+        }
     }
 }

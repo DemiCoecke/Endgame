@@ -1,16 +1,19 @@
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 1100px) {
     .block-1{
         &__content{
             display: flex;
             justify-content: space-between;
             align-items: center;
-            margin: 60px 0px 90px 0px;
+            margin: 60px 0px 0px 0px;
+
+            h2{
+                max-width: 460p;
+            }
         }
 
         &__form{
-            display: flex;
-            flex-direction: row;
-            justify-content: space-between;
+            display: block;
+            justify-content: center;
             align-items: center;
             max-width: 470px;
         }

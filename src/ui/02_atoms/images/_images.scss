@@ -5,7 +5,21 @@
     img {
         display: block;
         width: 100%;
-        margin: 0 auto;
         max-width: 510px;
+    }
+}
+
+
+@media only screen and (min-width: 768px) {
+    .block__img {
+        width: 100%;
+        height: 50%;
+    
+        img {
+            display: block;
+            width: 100%;
+            max-width: 600px;
+            min-width: 400px;
+        }
     }
 }

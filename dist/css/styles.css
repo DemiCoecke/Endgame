@@ -936,7 +936,7 @@ p, li {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 60px 0px 0px 0px; }
+    margin: 60px 0px 60px 0px; }
   .block-1__form {
     display: block;
     justify-content: center;
@@ -944,6 +944,12 @@ p, li {
     max-width: 470px; } }
 
 @media only screen and (min-width: 768px) {
+  .block-1__content {
+    margin: 40px 0px 40px 0px; }
+    .block-1__content .block__img {
+      display: flex;
+      justify-content: center;
+      align-items: center; }
   .block-1__text {
     margin-right: 30px; } }
 

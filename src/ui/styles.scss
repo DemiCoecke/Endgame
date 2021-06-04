@@ -6,6 +6,7 @@
 @import '02_atoms/buttons/buttons';
 @import '02_atoms/input/input';
 @import '02_atoms/images/images';
+@import '02_atoms/icons/socials';
 
 @import '03_molecules/cards/cards';
 @import '03_molecules/lists/lists';
@@ -16,3 +17,5 @@
 @import '04_organisms/header/header';
 @import '04_organisms/nav/nav';
 @import '04_organisms/footer/footer';
+
+@import '99_shame/test.scss'

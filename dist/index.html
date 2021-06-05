@@ -6,6 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/styles.css">
     <title>Home</title>
+
+    <script>
+        function lockScroll() {
+              document.body.classList.toggle('lock-scroll');
+        }
+  </script>
 </head>
 <body>
     <!-- Block 1 -->
@@ -28,10 +34,7 @@
                     <div class="nav__right">
                         <button class="nav__btn fc--text-white bold">Sign up</button>
                     </div>
-                    <!-- <div class="nav__menu">
-                        <img src="images/menu.png" alt="">
-                    </div> -->
-                    <div class="burger">
+                    <div class="burger" onclick="lockScroll();">
                         <div class="line1"></div>
                         <div class="line2"></div>
                         <div class="line3"></div>

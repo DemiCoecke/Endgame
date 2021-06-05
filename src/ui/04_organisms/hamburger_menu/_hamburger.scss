@@ -19,6 +19,11 @@ nav{
 }
 
 @media screen and (max-width: 1024px){
+    .overflow{
+        overflow-x: hidden;
+        position: relative;
+    }
+
     .nav__links{
         width: 60%;
     }
@@ -37,13 +42,15 @@ nav{
         color: rgb(235, 235, 235);
         text-decoration: none;
     }
+
+    .burger{
+        display: block;
+    }
     
 }
 
 @media screen and (max-width: 768px){
-    .body, html{
-        overflow-x: hidden;
-    }
+
     .nav__middle{
         display: flex;
     }

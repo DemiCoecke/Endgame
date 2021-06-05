@@ -1119,6 +1119,9 @@ nav {
   transition: all 0.3s ease; }
 
 @media screen and (max-width: 1024px) {
+  .overflow {
+    overflow-x: hidden;
+    position: relative; }
   .nav__links {
     width: 60%; }
   .nav__links {
@@ -1129,11 +1132,11 @@ nav {
     list-style: none; }
   .nav__links a {
     color: #ebebeb;
-    text-decoration: none; } }
+    text-decoration: none; }
+  .burger {
+    display: block; } }
 
 @media screen and (max-width: 768px) {
-  .body, html {
-    overflow-x: hidden; }
   .nav__middle {
     display: flex; }
   .nav__links {

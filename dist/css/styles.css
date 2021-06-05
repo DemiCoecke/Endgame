@@ -990,6 +990,8 @@ img:hover {
       display: flex;
       justify-content: center;
       align-items: center; }
+  .block-1__form {
+    margin-bottom: 20px; }
   .block-1__text {
     margin-right: 30px; } }
 

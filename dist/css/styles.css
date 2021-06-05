@@ -849,8 +849,7 @@ img:hover {
     align-items: center; }
   .card__icon {
     justify-content: center;
-    align-items: center; }
-  .card__icon {
+    align-items: center;
     width: auto;
     height: auto; }
   .card__bottom {
